@@ -1,0 +1,3 @@
+
+    int lineno=0,num=0,i=0;
+    char *p=NULL;
