@@ -39,38 +39,17 @@
    /* Put the tokens into the symbol table, so that GDB and other debuggers
       know about them.  */
    enum yytokentype {
-     NUM = 258,
-     VAR = 259,
-     RELOP = 260,
-     MAIN = 261,
-     IF = 262,
-     ELSE = 263,
-     WHILE = 264,
-     TYPE = 265
+     NUMBER = 258
    };
 #endif
 /* Tokens.  */
-#define NUM 258
-#define VAR 259
-#define RELOP 260
-#define MAIN 261
-#define IF 262
-#define ELSE 263
-#define WHILE 264
-#define TYPE 265
+#define NUMBER 258
 
 
 
 
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
-typedef union YYSTYPE
-#line 22 "bnf.y"
-{
-    char var[10];
-}
-/* Line 1529 of yacc.c.  */
-#line 73 "y.tab.h"
-	YYSTYPE;
+typedef int YYSTYPE;
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
 # define YYSTYPE_IS_DECLARED 1
 # define YYSTYPE_IS_TRIVIAL 1

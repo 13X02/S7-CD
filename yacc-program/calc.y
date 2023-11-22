@@ -45,7 +45,7 @@ void main()
 { 
 printf("\nEnter Any Arithmetic Expression which can have operations Addition, Subtraction, Multiplication, Division, Modulus and Round brackets:\n"); 
 
-yyparse(); 
+int yyparse(); 
 if(flag==0) 
 printf("\nEntered arithmetic expression is Valid\n\n"); 
 } 
